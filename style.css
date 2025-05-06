@@ -22,3 +22,59 @@ body {
 
   transition: background-color 0.5s, color 0.5s;
 }
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  width: 60%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+header img {
+  margin: 0 auto;
+  display: block;
+}
+
+#joke {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.jokeBtn {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.5s, color 0.5s;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
